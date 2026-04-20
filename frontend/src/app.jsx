@@ -1,17 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layouts/navbar';
-import Footer from './components/layouts/footer';
-import MobileMenu from './components/layouts/mobilemenu';
-import ScrollToTop from './hooks/scrollToTop'; // Create this to reset scroll on page change
-import { useMobileMenu } from './hooks/useMobileMenu';
+
+// ALL LOCAL IMPORTS MUST HAVE .jsx OR .js EXTENSION
+import Navbar from './components/layouts/navbar.jsx';
+import Footer from './components/layouts/footer.jsx'; // <--- THIS WAS THE PROBLEM
+import MobileMenu from './components/layouts/mobilemenu.jsx';
+import ScrollToTop from './hooks/scrollToTop.js'; // Hooks are typically .js
+
+// Import Pages (also ensure .jsx)
+import Home from './pages/home.jsx';
+import Career from './pages/career.jsx';
 import ServicesPage from './pages/services.jsx';
-// Import Pages
-import Home from './pages/home';
-import Career from './pages/career';
-// You can create these next:
-// import Services from './pages/services';
-// import Industries from './pages/industries';
+
+import { useMobileMenu } from './hooks/useMobileMenu.js'; // Hooks are typically .js
 
 function App() {
   const { isOpen, toggle, close } = useMobileMenu();

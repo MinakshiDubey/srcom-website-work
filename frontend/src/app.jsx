@@ -2,11 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // ALL LOCAL IMPORTS MUST HAVE .jsx OR .js EXTENSION
-import Navbar from './components/layouts/navbar.jsx';
-import Footer from './components/layouts/footer.jsx';
+import Navbar from './components/layouts/Navbar.jsx';
+import Footer from './components/layouts/Footer.jsx';
 
 // Corrected: MobileMenu component is in 'mobilemenu.jsx', not 'usemobilemenu.jsx'
-import MobileMenu from './components/layouts/mobilemenu.jsx'; 
+import MobileMenu from './components/layouts/MobileMenu.jsx'; 
 
 import ScrollToTop from './hooks/scrollToTop.js';
 

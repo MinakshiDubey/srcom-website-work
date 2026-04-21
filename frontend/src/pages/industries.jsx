@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionHeader from '../components/ui/SectionHeader';
-import RevealAnimation from '../components/ui/RevealAnimation';
+import SectionHeader from '../components/ui/sectionheader.jsx';
+import RevealAnimation from '../components/ui/revealanimation.jsx';
 import { industries } from '../data/content';
 
 const Industries = () => {

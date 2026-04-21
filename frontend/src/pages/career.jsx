@@ -1,7 +1,7 @@
 import React from 'react';
-import SectionHeader from '../components/ui/sectionheader';
-import RevealAnimation from '../components/ui/revealanimation';
-import Button from '../components/ui/button';
+import SectionHeader from '../components/ui/sectionheader.jsx';
+import RevealAnimation from '../components/ui/revealanimation.jsx';
+import Button from '../components/ui/button.jsx';
 
 const Career = () => {
   const benefits = [

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Import Link
 import { navLinks } from '../../data/content';
-import ThemeToggle from '../themetoggle'; // Matches your lowercase filename
-import Button from '../ui/button'; // Matches your lowercase filename
+import ThemeToggle from '../themetoggle.jsx';
+import Button from '../ui/button.jsx';
 
 const Navbar = ({ onMenuToggle }) => {
   const [scrolled, setScrolled] = useState(false);

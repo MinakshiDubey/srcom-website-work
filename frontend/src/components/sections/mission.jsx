@@ -1,6 +1,6 @@
 import React from 'react';
-import SectionHeader from '../ui/SectionHeader';
-import RevealAnimation from '../ui/RevealAnimation';
+import SectionHeader from '../ui/sectionheader.jsx';
+import RevealAnimation from '../ui/revealanimation.jsx';
 
 const Mission = () => {
   return (

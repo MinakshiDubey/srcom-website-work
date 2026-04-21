@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import RevealAnimation from '../components/ui/RevealAnimation';
-import Button from '../components/ui/Button';
+import RevealAnimation from '../components/ui/revealanimation.jsx';
+import Button from '../components/ui/button.jsx';
 
 const Contact = () => {
   const [formData, setFormData] = useState({

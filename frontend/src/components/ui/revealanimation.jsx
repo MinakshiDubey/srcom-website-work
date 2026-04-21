@@ -1,5 +1,5 @@
 import React from 'react';
-import { useScrollReveal } from '../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../hooks/usescrollreveal.jsx';
 
 const RevealAnimation = ({ children, direction = 'up', delay = 0, className = '' }) => {
   const ref = useScrollReveal();

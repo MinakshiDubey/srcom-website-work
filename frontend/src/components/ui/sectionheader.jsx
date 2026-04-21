@@ -1,5 +1,5 @@
 import React from 'react';
-import { useScrollReveal } from '../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../hooks/usescrollreveal.jsx';
 
 const SectionHeader = ({ label, title, description, centered = false }) => {
   const labelRef = useScrollReveal();

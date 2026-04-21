@@ -3,7 +3,7 @@ import RevealAnimation from '../ui/revealanimation.jsx';
 import Button from '../ui/button.jsx';
 
 const Hero = () => {
-  const defaultBg = 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80';
+  const defaultBg = 'https://i.pinimg.com/736x/7c/09/67/7c0967b8c60057ee36c45fa465a5c616.jpg';
 
   return (
     <section className="hero">

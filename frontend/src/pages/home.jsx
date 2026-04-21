@@ -1,25 +1,33 @@
 import React from 'react';
-// Add .jsx to all of these and ensure filenames are lowercase
-import Hero from "../components/sections/hero.jsx";
-import Ticker from "../components/sections/ticker.jsx";
-import Services from "../components/sections/services.jsx";
-import Mission from "../components/sections/mission.jsx";
-import TrustedClients from "../components/sections/trustedclients.jsx";
-import Contact from "../components/sections/contact.jsx";
-import Button from "../components/ui/button.jsx";
-import RevealAnimation from "../components/ui/revealanimation.jsx";
+import Hero from '../components/sections/hero.jsx';
+import Services from '../components/sections/services.jsx';
+import About from '../components/sections/about.jsx';
+import WhyUs from '../components/sections/whyus.jsx';
+import TrustedClients from '../components/sections/trustedclients.jsx';
+import Testimonials from '../components/sections/testimonials.jsx';
+import Team from '../components/sections/team.jsx';           // Ensure Team is imported
+import Contact from '../components/sections/contact.jsx';
 
-const Home = () => {
+const HomePage = () => {
   return (
     <main>
       <Hero />
-      <Ticker />
+      <div className="divider"></div>
       <Services />
-      <Mission />
+      <div className="divider"></div>
+      <About />
+      <div className="divider"></div>
+      <WhyUs />
+      <div className="divider"></div>
       <TrustedClients />
+      <div className="divider"></div>
+      <Testimonials />
+      <div className="divider"></div>
+      <Team /> {/* --- RENDER THE TEAM SECTION HERE --- */}
+      <div className="divider"></div>
       <Contact />
     </main>
   );
 };
 
-export default Home;
+export default HomePage;

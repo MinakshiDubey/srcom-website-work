@@ -181,24 +181,27 @@ nav {
 .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 99px; transition: all var(--transition); }
 
 /* ─── HERO ─── */
-.hero { position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; padding-top: 68px; }
+.hero { 
+  position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; padding-top: 68px; 
+  --text: #e8eaf2; --text2: #8b93a8; --border: rgba(255, 255, 255, 0.08); --card-bg: rgba(26, 34, 56, 0.7);
+  color: var(--text);
+}
 .hero-bg { position: absolute; inset: 0; z-index: 0; background-size: cover; background-position: center; transition: background-image 0.5s ease-in-out; }
 .hero-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,14,26,0.3) 0%, rgba(10,14,26,0.7) 100%); }
-[data-theme="light"] .hero-bg::after { background: linear-gradient(180deg, rgba(248, 249, 250, 0.1) 0%, rgba(248, 249, 250, 0.6) 100%); }
 .hero-content { position: relative; z-index: 1; padding: 80px 0; max-width: 800px; }
 .hero-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
 .hero-eyebrow-line { width: 40px; height: 1.5px; background: var(--accent); }
-.hero-eyebrow-text { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--accent); letter-spacing: 0.15em; }
-.hero h1 em { font-style: normal; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
-.hero-sub { font-size: 1.15rem; color: var(--text2); line-height: 1.7; max-width: 580px; margin-bottom: 44px; }
+.hero-eyebrow-text { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: #00d2ff; letter-spacing: 0.15em; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+.hero h1 em { font-style: normal; background: linear-gradient(135deg, #00d2ff, #0371e7); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); }
+.hero-sub { font-size: 1.15rem; color: #ffffff; font-weight: 500; line-height: 1.7; max-width: 580px; margin-bottom: 44px; text-shadow: 0 2px 5px rgba(0,0,0,0.8); }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
 .hero-stats { position: absolute; z-index: 1; bottom: 60px; right: 0; display: flex; gap: 40px; }
-.stat-number { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 700; color: var(--text); }
+.stat-number { font-family: 'DM Sans', sans-serif; font-size: 3rem; font-weight: 700; color: var(--text); }
 .stat-number span { color: var(--accent); }
 .stat-label { font-size: 0.8rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.1em; }
 
-.hero-badge { position: absolute; z-index: 2; background: var(--card-bg); border: 1px solid var(--border); backdrop-filter: blur(12px); border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; gap: 10px; animation: float 4s ease-in-out infinite; }
+.hero-badge { position: absolute; z-index: 2; background: var(--card-bg); border: 1px solid var(--border); backdrop-filter: blur(12px); border-radius: 12px; padding: 14px 18px; display: flex; align-items: center; gap: 10px; animation: float 4s ease-in-out infinite; color: var(--text); }
 .hero-badge-1 { top: 25%; right: 5%; }
 .hero-badge-2 { top: 55%; right: 12%; animation-delay: 1.5s; }
 .hero-badge-3 { top: 72%; right: 3%; animation-delay: 0.8s; }
@@ -215,7 +218,7 @@ nav {
 .services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .service-card { position: relative; padding: 48px 44px; background: var(--bg2); transition: background var(--transition); cursor: default; }
 .service-card:hover { background: var(--bg3); }
-.service-num { font-family: 'Cormorant Garamond', serif; font-size: 5rem; font-weight: 700; color: var(--border); line-height: 1; transition: color var(--transition); }
+.service-num { font-family: 'DM Sans', sans-serif; font-size: 5rem; font-weight: 700; color: var(--border); line-height: 1; transition: color var(--transition); }
 .service-card:hover .service-num { color: var(--accent); }
 .service-icon { position: absolute; top: 40px; right: 40px; width: 48px; height: 48px; border: 1.5px solid var(--border); border-radius: 12px; display: flex; align-items: center; justify-content: center; transition: all var(--transition); }
 .service-icon svg { width: 20px; height: 20px; stroke: var(--text2); }
@@ -248,28 +251,96 @@ nav {
 .why-bg { background: var(--bg2); }
 .why-inner { display: grid; grid-template-columns: 5fr 7fr; gap: 80px; align-items: start; }
 .why-feat { padding: 28px 0; border-bottom: 1px solid var(--border); display: flex; gap: 22px; }
-.why-feat-num { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--accent); margin-top: 4px; }
+.why-feat-num { font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--accent); margin-top: 4px; }
 .big-quote { background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 48px 44px; position: relative; overflow: hidden; }
 .big-quote::before { content: '"'; position: absolute; top: -20px; left: 24px; font-family: 'Cormorant Garamond', serif; font-size: 12rem; color: var(--border); line-height: 1; }
 .big-quote-text { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; position: relative; z-index: 1; margin-bottom: 28px; }
 .avatar { width: 44px; height: 44px; border-radius: 50%; background: var(--accent); display: flex; align-items: center; justify-content: center; font-weight: 700; }
 [data-theme="dark"] .avatar { color: #0a0e1a; }
 
-/* ─── TEAM ─── */
-.team-bg { background: var(--bg); }
-.team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.team-member-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 24px; text-align: center; transition: all var(--transition); }
-.team-member-card:hover { transform: translateY(-8px); box-shadow: var(--shadow); border-color: var(--accent); }
-.team-member-photo { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 0 auto 24px; border: 4px solid var(--surface); transition: border-color var(--transition); }
-.team-member-card:hover .team-member-photo { border-color: var(--accent); }
-.team-member-info .title { display: block; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; color: var(--accent); text-transform: uppercase; margin-bottom: 16px; }
+/* ── TEAM (UPDATED FOR ORIGINAL CARD STYLE) ── */
+#team { } /* No change needed here for section padding */
+
+/* This is the new grid for the team cards */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted min-width for better fit */
+  gap: 1.5rem; /* Consistent gap */
+  margin-top: 3rem;
+  justify-items: center; /* Center cards if there aren't enough to fill a row */
+}
+
+/* --- NEW TEAM MEMBER CARD STYLE --- */
+.team-member-card { /* Renamed from .team-card */
+  background: var(--card-bg); /* White background for light theme */
+  border: 1px solid var(--border);
+  border-radius: 10px; /* Consistent border radius */
+  padding: 2.5rem 2rem; /* Adjusted padding */
+  text-align: center;
+  transition: all var(--transition);
+  max-width: 380px; /* Optional: Limit width for larger screens */
+  width: 100%; /* Ensure it takes full width of grid column */
+}
+
+.team-member-card:hover {
+  transform: translateY(-8px); /* Subtle lift on hover */
+  box-shadow: 0 15px 40px rgba(10,22,40,0.1); /* Soft shadow for light theme */
+  border-color: rgba(201,148,58,0.3); /* Gold border on hover */
+}
+
+.team-member-photo {
+  width: 120px; /* Fixed width */
+  height: 120px; /* Fixed height */
+  border-radius: 50%; /* Circular photo */
+  object-fit: cover; /* Ensures image fills the circle */
+  margin: 0 auto 1.5rem; /* Center and add margin below */
+  border: 4px solid var(--white); /* White border around photo */
+  transition: border-color var(--transition);
+}
+
+.team-member-card:hover .team-member-photo {
+  border-color: var(--gold); /* Gold border on photo hover */
+}
+
+.team-member-info h4 {
+  font-family: 'Fraunces', serif;
+  font-size: 1.4rem; /* Larger name font */
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+}
+
+.team-member-info .title { /* Corresponds to span.title in JSX */
+  display: block;
+  font-size: 0.85rem; /* Role font size */
+  color: var(--gold); /* Gold color for role */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.team-member-info p {
+  font-size: 0.9rem; /* Bio font size */
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+/* --- Responsive Adjustments for Team Section --- */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr; /* Single column on smaller screens */
+    max-width: 400px; /* Limit width of single column */
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* ─── PROCESS ─── */
 .process-bg { background: var(--bg2); }
 .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); position: relative; }
 .process-steps::before { content: ''; position: absolute; top: 38px; left: 12%; right: 12%; height: 1.5px; background: linear-gradient(90deg, var(--accent), var(--accent2), var(--accent)); opacity: 0.3; }
 .process-step { padding: 0 24px; text-align: center; position: relative; }
-.step-dot { width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 28px; background: var(--bg); border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--accent); font-family: 'JetBrains Mono', monospace; position: relative; z-index: 1; transition: all var(--transition); }
+.step-dot { width: 76px; height: 76px; border-radius: 50%; margin: 0 auto 28px; background: var(--bg); border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--accent); font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 1.2rem; position: relative; z-index: 1; transition: all var(--transition); }
 .process-step:hover .step-dot { border-color: var(--accent); background: rgba(0,123,255,0.08); }
 
 /* ─── TESTIMONIALS & CLIENTS ─── */

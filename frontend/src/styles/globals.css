@@ -191,9 +191,11 @@ nav {
 .hero-content { position: relative; z-index: 1; padding: 80px 0; max-width: 800px; }
 .hero-eyebrow { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
 .hero-eyebrow-line { width: 40px; height: 1.5px; background: var(--accent); }
-.hero-eyebrow-text { font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; color: #00d2ff; letter-spacing: 0.15em; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
+.hero-eyebrow-text { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; color: var(--accent); letter-spacing: 0.15em; }
+.hero .hero-eyebrow-text { font-size: 0.8rem; font-weight: 700; color: #00d2ff; text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 .hero h1 em { font-style: normal; background: linear-gradient(135deg, #00d2ff, #0371e7); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.4)); }
-.hero-sub { font-size: 1.15rem; color: #ffffff; font-weight: 500; line-height: 1.7; max-width: 580px; margin-bottom: 44px; text-shadow: 0 2px 5px rgba(0,0,0,0.8); }
+.hero-sub { font-size: 1.15rem; color: var(--text2); line-height: 1.7; max-width: 580px; margin-bottom: 44px; }
+.hero .hero-sub { color: #ffffff; font-weight: 500; text-shadow: 0 2px 5px rgba(0,0,0,0.8); }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
 .hero-stats { position: absolute; z-index: 1; bottom: 60px; right: 0; display: flex; gap: 40px; }

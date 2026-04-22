@@ -217,8 +217,15 @@ nav {
 @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
 /* ─── SERVICES ─── */
-.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; margin-top: 10px; }
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; border: 1px solid var(--border); border-radius: var(--radius); margin-top: 10px; }
 .service-card { position: relative; padding: 32px 30px; background: var(--bg2); transition: background var(--transition); cursor: default; }
+
+/* Fixed corner shapes for the grid */
+.services-grid > *:nth-child(1) .service-card { border-top-left-radius: var(--radius); }
+.services-grid > *:nth-child(2) .service-card { border-top-right-radius: var(--radius); }
+.services-grid > *:nth-child(3) .service-card { border-bottom-left-radius: var(--radius); }
+.services-grid > *:nth-child(4) .service-card { border-bottom-right-radius: var(--radius); }
+
 .service-card:hover { background: var(--bg3); }
 .service-num { font-family: 'DM Sans', sans-serif; font-size: 5rem; font-weight: 700; color: var(--border); line-height: 1; transition: color var(--transition); }
 .service-card:hover .service-num { color: var(--accent); }

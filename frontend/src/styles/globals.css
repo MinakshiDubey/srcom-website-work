@@ -538,38 +538,115 @@ footer {
 .mobile-menu a { font-size: 1.4rem; font-family: 'Cormorant Garamond', serif; font-weight: 600; color: var(--text); padding-bottom: 20px; border-bottom: 1px solid var(--border); }
 
 /* ─── RESPONSIVE ─── */
+
+/* ── Tablet (≤1024px) ── */
 @media (max-width: 1024px) {
   .services-grid, .mission-inner, .why-inner, .team-grid, .contact-wrap { grid-template-columns: 1fr; }
+  #about { grid-template-columns: 1fr; gap: 40px; }
+  .testi-grid { grid-template-columns: repeat(2, 1fr); }
   .industries-grid { grid-template-columns: repeat(2, 1fr); }
+  .clients-grid { grid-template-columns: repeat(3, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+  .why-inner { gap: 40px; }
+  .contact-wrap { gap: 40px; }
+  .about-bg { min-height: auto; }
 }
 
+/* ── Small Tablet / Large Phone (≤768px) ── */
 @media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .section { padding: 48px 0; }
+  #team { padding: 48px 0; }
+  .contact-section { padding: 48px 0; }
+
   .nav-links, .nav-right .btn { display: none; }
   .hamburger { display: flex; }
-  .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
-  .process-steps::before { display: none; }
-  
-  /* Hero fixes for Mobile/Tablet */
+
+  /* Hero */
   .hero { align-items: flex-start; padding-top: 80px; }
   .hero-content { padding: 20px 0; }
   .hero-stats { position: static; margin-top: 40px; flex-wrap: wrap; gap: 20px; }
   .stat-number { font-size: 2.2rem; }
   .stat-label { font-size: 0.75rem; }
-  .hero-badge { display: none; } /* Prevent floating badges from overlapping text */
+  .hero-badge { display: none; }
   .hero-sub { font-size: 1rem; margin-bottom: 30px; }
 
-  .form-row { grid-template-columns: 1fr; }
+  /* Grids stack */
+  .services-grid { grid-template-columns: 1fr; }
+  #about { grid-template-columns: 1fr; gap: 32px; }
+  .about-list { grid-template-columns: 1fr; }
+  .about-bg { min-height: auto; padding: 28px; }
+  .why-inner { grid-template-columns: 1fr; gap: 32px; }
+  .testi-grid { grid-template-columns: 1fr; }
   .clients-grid { grid-template-columns: repeat(2, 1fr); }
+  .industries-grid { grid-template-columns: 1fr; }
+  .contact-wrap { grid-template-columns: 1fr; gap: 32px; }
+  .form-row { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .process-steps::before { display: none; }
+
+  /* Cards & quotes */
+  .big-quote { padding: 28px 24px; }
+  .big-quote-text { font-size: 1.3rem; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+  footer { padding: 48px 0 32px; }
 }
 
+/* ── Phone (≤480px) ── */
 @media (max-width: 480px) {
-  .process-steps { grid-template-columns: 1fr; }
-  h1 { font-size: 2.2rem; }
-  h2 { font-size: 1.8rem; }
-  
-  /* Hero fixes for Mobile Phones */
+  .container { padding: 0 16px; }
+  .section { padding: 36px 0; }
+  #team { padding: 36px 0; }
+  .contact-section { padding: 36px 0; }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.2rem; }
+
+  /* Hero */
+  .hero { padding-top: 70px; }
+  .hero-content { padding: 16px 0; }
   .hero-actions { flex-direction: column; width: 100%; }
   .hero-actions .btn { width: 100%; justify-content: center; }
+  .hero-sub { font-size: 0.95rem; }
   .scroll-hint { display: none; }
+  .stat-number { font-size: 1.8rem; }
+
+  /* Services */
+  .service-card { padding: 24px 20px; }
+  .service-num { font-size: 3.5rem; }
+  .service-icon { top: 24px; right: 20px; width: 40px; height: 40px; }
+
+  /* About */
+  .about-bg { padding: 20px; }
+  .about-years { font-size: 5rem; }
+  .cert-badge { padding: 12px; }
+
+  /* Why Us */
+  .why-feat { padding: 20px 0; gap: 14px; }
+  .big-quote { padding: 24px 18px; }
+  .big-quote-text { font-size: 1.15rem; margin-bottom: 20px; }
+
+  /* Testimonials & Clients */
+  .testi-card { padding: 24px 20px; }
+  .clients-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .client-card { padding: 20px 12px; }
+
+  /* Team */
+  .team-grid { grid-template-columns: 1fr; margin-top: 1.5rem; }
+  .team-member-card { padding: 1.5rem 1.2rem; }
+
+  /* Contact */
+  .contact-wrap { gap: 24px; }
+
+  /* Process */
+  .process-steps { grid-template-columns: 1fr; }
+  .step-dot { width: 60px; height: 60px; font-size: 1rem; }
+
+  /* Footer */
+  footer { padding: 36px 0 24px; }
+  .footer-grid { gap: 28px; margin-bottom: 40px; }
 }

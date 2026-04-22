@@ -3,14 +3,19 @@ import RevealAnimation from '../ui/revealanimation.jsx';
 import Button from '../ui/button.jsx';
 
 const Hero = () => {
-  const defaultBg = 'https://i.pinimg.com/736x/7c/09/67/7c0967b8c60057ee36c45fa465a5c616.jpg';
-
   return (
     <section className="hero">
-      <div 
-        className="hero-bg" 
-        style={{ backgroundImage: `url('${defaultBg}')` }}
-      />
+      <div className="hero-bg" style={{ overflow: 'hidden' }}>
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        >
+          <source src="/portfolio/13456575_3840_2160_30fps.mp4" type="video/mp4" />
+        </video>
+      </div>
 
       <div className="container" style={{ position: 'relative', zIndex: 1, width: '100%' }}>
         <div className="hero-content">

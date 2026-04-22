@@ -182,7 +182,7 @@ nav {
 
 /* ─── HERO ─── */
 .hero { 
-  position: relative; min-height: 100vh; display: flex; align-items: center; overflow: hidden; padding-top: 68px; 
+  position: relative; min-height: 80vh; display: flex; align-items: center; overflow: hidden; padding-top: 80px; padding-bottom: 40px;
   --text: #e8eaf2; --text2: #8b93a8; --border: rgba(255, 255, 255, 0.08); --card-bg: rgba(26, 34, 56, 0.7);
   color: var(--text);
 }

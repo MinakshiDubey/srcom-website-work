@@ -282,6 +282,17 @@ nav {
   transition: all var(--transition);
   max-width: 380px; /* Optional: Limit width for larger screens */
   width: 100%; /* Ensure it takes full width of grid column */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.team-member-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.team-member-info p {
+  margin-top: auto;
 }
 
 .team-member-card:hover {

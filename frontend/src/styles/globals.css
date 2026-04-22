@@ -366,9 +366,12 @@ nav {
 
 /* ─── TESTIMONIALS & CLIENTS ─── */
 .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.testi-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 32px; transition: all var(--transition); }
+.testi-grid > div { height: 100%; }
+.testi-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 36px 32px; transition: all var(--transition); height: 100%; display: flex; flex-direction: column; }
 .testi-card:hover { border-color: var(--accent); transform: translateY(-4px); }
+.testi-text { flex: 1; }
 .testi-stars { color: var(--accent); margin-bottom: 20px; }
+.testi-author { margin-top: 20px; display: flex; align-items: center; gap: 12px; }
 .testi-avatar { width: 40px; height: 40px; border-radius: 50%; background: var(--surface); border: 1.5px solid var(--border); display: flex; align-items: center; justify-content: center; font-weight: 600; color: var(--accent); }
 
 .clients-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }

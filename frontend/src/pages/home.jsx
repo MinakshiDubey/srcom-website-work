@@ -15,9 +15,9 @@ const HomePage = () => {
       <Services />
       <WhyUs />
       <TrustedClients />
+      <About />
       <Testimonials />
       <Team /> {/* --- RENDER THE TEAM SECTION HERE --- */}
-      <About />
       <Contact />
     </main>
   );

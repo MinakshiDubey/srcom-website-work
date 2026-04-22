@@ -56,8 +56,8 @@ const Navbar = ({ onMenuToggle }) => {
 
         <div className="nav-right">
           <ThemeToggle />
-          {/* Changed href to /contact to point to your new contact page route */}
-          <Button href="/contact" variant="primary">
+          {/* Scrolls to #contact form on the home page */}
+          <Button href="/#contact" variant="primary">
             Get in Touch
           </Button>
           <button 

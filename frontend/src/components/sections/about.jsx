@@ -4,7 +4,7 @@ import { aboutListItems } from '../../data/content.js'; // Ensure content.js is 
 
 const About = () => {
   return (
-    <section aria-label="About Us">
+    <section className="section" aria-label="About Us">
       <div className="container">
         <div id="about">
           <div className="about-visual reveal">

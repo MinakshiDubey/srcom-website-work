@@ -12,19 +12,12 @@ const HomePage = () => {
   return (
     <main>
       <Hero />
-      <div className="divider"></div>
       <Services />
-      <div className="divider"></div>
-      <About />
-      <div className="divider"></div>
       <WhyUs />
-      <div className="divider"></div>
+      <About />
       <TrustedClients />
-      <div className="divider"></div>
       <Testimonials />
-      <div className="divider"></div>
       <Team /> {/* --- RENDER THE TEAM SECTION HERE --- */}
-      <div className="divider"></div>
       <Contact />
     </main>
   );
